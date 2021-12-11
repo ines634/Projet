@@ -5,25 +5,25 @@
     stages {
         stage ("cloning"){
           steps{
-                sh " git clone https://github.com/contentful/the-example-app.nodejs.git"
+                bin " git clone https://github.com/contentful/the-example-app.nodejs.git"
                 
                 }
         }
    stage ("istalation"){
           steps{
-                sh "npm install"
+                bin "npm install"
                 
                 }
         }
          stage ("Deploy"){
           steps{
-                sh " npm run start:dev &"
+                bin " npm run start:dev &"
                 
                 }
         }
         stage ("test"){
           steps{
-                sh "curl http://localhost:3000"
+                bin "curl http://localhost:3000"
                 
                 }
         }

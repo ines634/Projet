@@ -13,13 +13,13 @@
    stage ("istalation"){
           steps{
            bat "cd the-example-app.nodejs" 
-                bat "npm init install"
+                bat "npm install"
                 
                 }
         }
          stage ("Deploy"){
           steps{
-                bat " npm init run start:dev &"
+                bat " npm run start:dev &"
                 
                 }
         }

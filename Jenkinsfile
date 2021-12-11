@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage ("cloning"){
           steps{
-                sh " git clone https://github.com/contentful/the-example-app.nodejs.git"
+                sh "git clone https://github.com/contentful/the-example-app.nodejs.git"
                 
                 }
         }
@@ -17,7 +17,7 @@ pipeline {
         }
          stage ("Deploy"){
           steps{
-                sh " npm run start:dev &"
+                sh "npm run start:dev &"
                 
                 }
         }

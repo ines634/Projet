@@ -11,13 +11,13 @@
                // }
         //}
    stage ("istalation"){
-          steps{
-           bat "cd the-example-app.nodejs" 
-           bat "npm i npm@latest -g"
-                bat "npm install"
+          //steps{
+           //bat "cd the-example-app.nodejs" 
+           //bat "npm i npm@latest -g"
+               // bat "npm install"
                 
-                }
-        }
+               // }
+        //}
          stage ("Deploy"){
           steps{
                 bat " npm run start:dev &"

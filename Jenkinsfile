@@ -5,25 +5,25 @@ pipeline {
     stages {
         stage ("cloning"){
           steps{
-                sh "git clone https://github.com/contentful/the-example-app.nodejs.git"
+                bat "git clone https://github.com/contentful/the-example-app.nodejs.git"
                 
                 }
         }
    stage ("istalation"){
           steps{
-                sh "npm install"
+                bat "npm install"
                 
                 }
         }
          stage ("Deploy"){
           steps{
-                sh "npm run start:dev &"
+                bat "npm run start:dev &"
                 
                 }
         }
         stage ("test"){
           steps{
-                sh "curl http://localhost:3000"
+                bat "curl http://localhost:3000"
                 
                 }
         }

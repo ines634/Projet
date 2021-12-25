@@ -21,6 +21,7 @@
         }
          stage ("Deploy"){
           steps{
+            echo %cd%
                 bat " npm run start:dev &"
                 
                 }

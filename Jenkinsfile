@@ -14,8 +14,8 @@
           steps{
               bat "cd the-example-app.nodejs" 
               //echo "" > package.json
-              //bat "npm i npm@latest -g"
-                bat "npm install"
+             bat "npm i npm@latest -g"
+             //   bat "npm install"
                 
                 }
         }

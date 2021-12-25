@@ -13,7 +13,6 @@
    stage ("istalation"){
           steps{
               bat "cd the-example-app.nodejs" 
-              //echo "" > package.json
              bat "npm i npm@latest -g"
              //   bat "npm install"
                 
@@ -21,7 +20,7 @@
         }
          stage ("Deploy"){
           steps{
-                bat "echo %cd%"
+           bat "cd the-example-app.nodejs" 
                 bat " npm run start:dev &"
                 
                 }

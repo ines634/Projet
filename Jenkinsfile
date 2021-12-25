@@ -20,8 +20,7 @@
         }
          stage ("Deploy"){
           steps{
-           bat "cd the-example-app.nodejs" 
-                bat " npm run start:dev &"
+           bat "cd the-example-app.nodejs && npm run start:dev &"
                 
                 }
         }

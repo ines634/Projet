@@ -12,9 +12,7 @@
         //}
    stage ("istalation"){
           steps{
-              bat "cd the-example-app.nodejs" 
-             bat "npm i npm@latest -g"
-             //   bat "npm install"
+              bat "cd the-example-app.nodejs && npm i npm@latest -g && npm install"
                 
                 }
         }
